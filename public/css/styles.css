@@ -1,0 +1,318 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input{
+    border: 2px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 0px solid #cccccc;
+    background: #888888;
+    color: white;
+    padding: 9px;
+}
+
+/* ====== Halaman Tentang ====== */
+.about-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8faff;
+  border-radius: 10px;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.about-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+.about-text h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  color: #3498db;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.cv-section {
+  padding: 40px;
+  background: #f4f6ff;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.cv-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.cv-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cv-left, .cv-right {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cv-left h3, .cv-right h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.cv-left ul, .cv-right ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-left li, .cv-right li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.cv-right p {
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-social {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-social.github {
+  background-color: #24292e;
+  color: white;
+}
+
+.btn-social.github:hover {
+  background-color: #000;
+}
+
+.btn-social.instagram {
+  background-color: #e1306c;
+  color: white;
+}
+
+.btn-social.instagram:hover {
+  background-color: #ad1457;
+}
+
+/* ====== Halaman Bantuan / FAQ ====== */
+.faq-section {
+  padding: 40px;
+  background: #f8faff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.faq-section h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.faq-item p, .faq-item ul {
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-item ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+.faq-img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Halaman Berita ====== */
+.news-section {
+  padding: 40px;
+  background: #f8faff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.news-section h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
+
+.news-section p.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 35px;
+  font-size: 1.05em;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.news-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-headline {
+  color: #3498db;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.news-description {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.news-meta {
+  font-size: 0.85em;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.news-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.news-btn:hover {
+  background-color: #2c80b4;
+}

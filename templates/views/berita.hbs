@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  {{>head}}
+  <body>
+    <div class="main-content">
+      {{>header}}
+      <section class="news-section">
+        <h1>📰 Berita Terkini</h1>
+        <p class="subtitle">Berita terbaru dari berbagai sumber terpercaya</p>
+
+        {{#if error}}
+          <p style="text-align:center; color:red;">{{error}}</p>
+        {{else}}
+          <div class="news-container">
+            {{#each berita}}
+              <div class="news-card">
+                {{#if this.image}}
+                  <img src="{{this.image}}" alt="Gambar Berita" class="news-img">
+                {{else}}
+                  <img src="/img/cuaca.png" alt="Default Image" class="news-img">
+                {{/if}}
+                <div class="news-content">
+                  <div class="news-headline">{{this.title}}</div>
+                  <div class="news-description">
+                    {{this.description}}
+                  </div>
+                  <div class="news-meta">
+                    <span>{{this.author}}</span>
+                    <span>{{this.published_at}}</span>
+                  </div>
+                  <a href="{{this.url}}" target="_blank" class="news-btn">Baca Selengkapnya</a>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        {{/if}}
+      </section>
+    </div>
+    {{>footer}}
+  </body>
+</html>

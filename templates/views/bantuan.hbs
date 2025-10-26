@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  {{>head}}
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <section class="faq-section">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+
+        <div class="faq-item">
+          <h3>📘 a. Halaman ini digunakan untuk apa?</h3>
+          <p>
+            Halaman ini digunakan untuk memberikan panduan dan jawaban atas pertanyaan umum yang sering ditanyakan oleh pengguna.
+            Tujuannya agar pengguna dapat memahami cara kerja dan penggunaan <b>Aplikasi Cek Cuaca</b> dengan mudah.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>🔍 b. Apa itu API?</h3>
+          <p>
+            <b>API (Application Programming Interface)</b> adalah jembatan yang memungkinkan dua aplikasi atau sistem berbeda untuk saling berkomunikasi.
+            API membantu pengembang mengambil atau mengirim data dari server lain tanpa harus membangun sistem dari awal.
+            Misalnya, aplikasi cuaca ini menggunakan API untuk mengambil data cuaca dari server penyedia.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>☁️ c. API apa yang digunakan dalam aplikasi ini?</h3>
+          <p>
+            Aplikasi ini menggunakan dua API utama, yaitu:
+          </p>
+          <ul>
+            <li><b>Mapbox API</b> – untuk mendapatkan informasi koordinat (latitude dan longitude) dari nama lokasi yang dicari pengguna.</li>
+            <li><b>Weatherstack API</b> – untuk menampilkan informasi cuaca berdasarkan koordinat tersebut.</li>
+          </ul>
+          <p>Dengan kedua API ini, aplikasi bisa menampilkan cuaca real-time di berbagai lokasi.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>🧩 d. Salah satu pola arsitektur API adalah RESTful</h3>
+          <p>
+            Pola arsitektur <b>RESTful API (Representational State Transfer)</b> digunakan untuk menghubungkan aplikasi client dan server menggunakan protokol HTTP.
+            REST memanfaatkan metode seperti <b>GET</b>, <b>POST</b>, <b>PUT</b>, dan <b>DELETE</b> untuk mengakses data.
+            Dalam aplikasi ini, <b>client</b> (browser) mengirim permintaan ke <b>server Node.js</b> yang kemudian meneruskan permintaan tersebut ke API eksternal
+            seperti Mapbox dan Weatherstack.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>🖼️ Ilustrasi Arsitektur API</h3>
+          <p>Gambar berikut menunjukkan bagaimana <b>RESTful API</b> bekerja, mulai dari permintaan pengguna (client) ke server hingga pengambilan data dari database.</p>
+          <img src="/img/RESTful-API.png" alt="Diagram Arsitektur RESTful API" class="faq-img">
+          <p style="text-align:center; font-size: 14px; color: #666;">
+            Gambar 1. Diagram Arsitektur RESTful API dalam Aplikasi Cek Cuaca
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>📧 Bagaimana cara menghubungi pengembang?</h3>
+          <p>
+            Kamu dapat menghubungi saya melalui email: <b>carinasetya@gmail.com</b><br>
+            atau melalui Instagram: 
+            <a href="https://instagram.com/setyacarinaa" target="_blank">@setyacarinaa</a>
+          </p>
+        </div>
+      </section>
+    </div>
+    {{>footer}}
+  </body>
+</html>
